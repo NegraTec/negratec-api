@@ -6,9 +6,9 @@ class PerfilFactoryResource(DictFactory):
     cargo = 'Desenvolvedora'
     twitter = 'roselmamendes'
     github = 'roselmamendes'
-    linkedin = ''
+    linkedin = 'roselmamendes'
     outras_redes = 'http://roselmamendes.github.io'
-    lutas = ''
+    lutas = 'feminismo negro'
     stacks = 'java, python'
-    eventos = ''
-    imagem = None
+    eventos = 'PyLadies'
+    imagem = '/pt.jpeg'

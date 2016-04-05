@@ -1,3 +1,8 @@
 Django==1.9.4
 djangorestframework==3.3.3
+factory-boy==2.6.1
+fake-factory==0.5.7
+Paver==1.2.4
 Pillow==3.1.1
+python-dateutil==2.5.2
+six==1.10.0
