@@ -1,4 +1,4 @@
-# NegraTec API
+# NegraTec API [![Build Status](https://snap-ci.com/NegraTec/negratec-api/branch/master/build_image)](https://snap-ci.com/NegraTec/negratec-api/branch/master)
 [Quadro das funcionalidades a serem implementadas e para adição de novas](https://waffle.io/NegraTec/negratec-api).
 
 API para receber as submissões do site negratec.github.io.
