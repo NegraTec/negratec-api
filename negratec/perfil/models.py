@@ -12,4 +12,4 @@ class Perfil(models.Model):
     lutas = models.CharField(max_length=100)
     stacks = models.CharField(max_length=100)
     eventos = models.CharField(max_length=100)
-    imagem = models.ImageField(upload_to='/media', default='/media', null=True)
+    imagem = models.ImageField(upload_to='negratec/media', default='negratec/media', null=True)
