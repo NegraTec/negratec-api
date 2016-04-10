@@ -17,4 +17,9 @@ def server():
 
 @task
 def migration():
-    sh('python ./manage.py makemigrations; python ./manage.py migrate')
+    sh('python ./manage.py migrate')
+
+@task
+@needs('test')
+def ci():
+    sh('flake8 negratec')

@@ -12,4 +12,3 @@ class PerfilTest(APITestCase):
         response = self.client.post('/v1/perfil', expected_perfil)
 
         self.assertEqual(201, response.status_code, response.data)
-

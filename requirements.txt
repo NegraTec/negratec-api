@@ -2,8 +2,12 @@ Django==1.9.4
 djangorestframework==3.3.3
 factory-boy==2.6.1
 fake-factory==0.5.7
+flake8==2.5.4
+mccabe==0.4.0
 Paver==1.2.4
+pep8==1.7.0
 Pillow==3.1.1
 psycopg2==2.6.1
+pyflakes==1.0.0
 python-dateutil==2.5.2
 six==1.10.0

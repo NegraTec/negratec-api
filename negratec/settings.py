@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'django.contrib.contenttypes',
+    'django.contrib.auth',
     'rest_framework',
     'negratec.perfil',
 )
