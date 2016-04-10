@@ -24,6 +24,8 @@ Crie o banco de dados com o comando `createdb negratec`
 
 `paver test`
 
+Antes de qualquer **pull request** execute `paver ci` na sua máquina. Este comando além dos testes, executa o flake8 que checa sintaxe e estilo.
+
 ### Executar o servidor
 
 `paver server`
