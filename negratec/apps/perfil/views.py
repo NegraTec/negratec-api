@@ -1,5 +1,5 @@
-from negratec.perfil.models import Perfil
-from negratec.perfil.serializers import PerfilSerializer
+from negratec.apps.perfil.models import Perfil
+from negratec.apps.perfil.serializers import PerfilSerializer
 from rest_framework.generics import ListCreateAPIView
 
 

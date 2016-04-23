@@ -33,7 +33,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.auth',
     'rest_framework',
-    'negratec.perfil',
+    'negratec.apps.perfil',
 )
 
 ROOT_URLCONF = 'negratec.urls'

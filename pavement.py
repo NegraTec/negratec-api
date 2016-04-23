@@ -6,7 +6,7 @@ from paver.tasks import needs
 @task
 @needs('migration')
 def test():
-    sh('python ./manage.py test')
+    sh('python ./manage.py test negratec.apps')
 
 
 @task

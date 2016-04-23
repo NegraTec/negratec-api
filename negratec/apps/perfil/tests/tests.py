@@ -1,6 +1,6 @@
-from negratec.perfil.tests import helper_photo
+from negratec.apps.perfil.tests import helper_photo
 from rest_framework.test import APITestCase
-from negratec.perfil.factories import PerfilFactoryResource
+from negratec.apps.perfil.factories import PerfilFactoryResource
 
 
 class PerfilTest(APITestCase):

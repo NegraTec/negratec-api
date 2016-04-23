@@ -1,4 +1,4 @@
-from negratec.perfil.models import Perfil
+from negratec.apps.perfil.models import Perfil
 from rest_framework import serializers
 
 
