@@ -4,6 +4,7 @@ from factory import DictFactory
 class PerfilFactoryResource(DictFactory):
     nome = 'Roselma'
     cargo = 'Desenvolvedora'
+    descricao = ''
     twitter = 'roselmamendes'
     github = 'roselmamendes'
     linkedin = 'roselmamendes'
