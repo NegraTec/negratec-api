@@ -1,7 +1,10 @@
 from negratec.apps.perfil.tests import helper_photo
 from rest_framework.test import APITestCase
-from negratec.apps.perfil.tests.factories import PerfilFactoryResource
+from negratec.apps.perfil.tests.factories import PerfilFactoryResource, PerfilFactory
 from negratec.apps.usuaria.factories import UserFactory
+from django.core.files.base import ContentFile
+import base64
+from negratec.apps.perfil.models import Perfil
 
 
 class PerfilTest(APITestCase):
@@ -60,3 +63,25 @@ class PerfilTest(APITestCase):
 
         self.assertEqual(201, response.status_code, response.data)
         self.assertEqual(expected_perfil['descricao'], response.data['descricao'])
+
+    def test_permiti_deletar_um_perfil(self):
+        usuaria = UserFactory()
+        img = self.trata_imagem(helper_photo.photo_base64())
+        expected_perfil = PerfilFactory(
+          usuaria=usuaria,
+          descricao='sobre mim.',
+          imagem=img
+        )
+
+        response = self.client.delete('/v1/perfil/{}/'.format(expected_perfil.pk))
+
+        self.assertEqual(204, response.status_code)
+
+        perfil_no_db = Perfil.objects.filter(pk=expected_perfil.pk)
+        self.assertEqual(0, perfil_no_db.count())
+
+    def trata_imagem(self, data):
+        format, imgstr = data.split(';base64,')  # format ~= data:image/X,
+        ext = format.split('/')[-1]  # guess file extension
+        data = ContentFile(base64.b64decode(imgstr), name='temp.' + ext)
+        return data

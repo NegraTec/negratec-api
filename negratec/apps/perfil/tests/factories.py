@@ -1,4 +1,6 @@
 from factory import DictFactory
+from factory.django import DjangoModelFactory
+from negratec.apps.perfil.models import Perfil
 
 
 class PerfilFactoryResource(DictFactory):
@@ -14,3 +16,11 @@ class PerfilFactoryResource(DictFactory):
     eventos = 'PyLadies'
     imagem = None
     usuaria = None
+
+
+class PerfilFactory(DjangoModelFactory):
+    class Meta:
+        model = Perfil
+
+    nome = 'Roselma'
+    cargo = 'Desenvolvedora'
