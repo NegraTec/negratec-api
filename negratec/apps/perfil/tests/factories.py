@@ -11,4 +11,5 @@ class PerfilFactoryResource(DictFactory):
     lutas = 'feminismo negro'
     stacks = 'java, python'
     eventos = 'PyLadies'
-    imagem = ''
+    imagem = None
+    usuaria = None
